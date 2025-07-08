@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Imóveis Destaque</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png" />
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="Logo" class="logo" />
+    <div class="filtros">
+      <select id="filtroValor">
+        <option value="">Valor</option>
+        <option value="100000">até R$100.000</option>
+        <option value="200000">até R$200.000</option>
+      </select>
+      <select id="filtroCondominio">
+        <option value="">Condomínio</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+      </select>
+      <select id="filtroTipo">
+        <option value="">Tipo</option>
+        <option value="casa">Casa</option>
+        <option value="apto">Apartamento</option>
+      </select>
+    </div>
+  </header>
+
+  <section class="carrossel">
+    <h2>Destaques da Semana</h2>
+    <div class="swiper-container">
+      <div class="swiper-wrapper" id="carrosselDestaque">
+        <!-- Slides gerados pelo JS -->
+      </div>
+    </div>
+  </section>
+
+  <section class="catalogo" id="catalogo">
+    <h2>Todos os Imóveis</h2>
+    <div class="lista-imoveis" id="listaImoveis">
+      <!-- Cards gerados pelo JS -->
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
